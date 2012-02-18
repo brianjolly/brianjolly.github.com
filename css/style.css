@@ -325,7 +325,7 @@ header h3 { font-size: 14px; line-height: 15px; color:#777; }
 
 header { 
     padding: 0 10px 20px 0; 
-    border: 1px solid #eee; 
+    /*border: 1px solid #eee;*/
     clear: both;
 }
 
