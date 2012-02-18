@@ -319,14 +319,15 @@ h1 {
     margin:0; 
 }
 
-header h1 { font-size: 30px; line-height: 30px; padding: 9px 0 5px 0; }
-header h2 { font-size: 25px; line-height: 23px; padding: 0 0 5px 0; color:#555; }
+header h1 { font-size: 30px; line-height: 30px; padding: 9px 0 10px 0; }
+header h2 { font-size: 25px; line-height: 23px; padding: 0 0 14px 0; color:#f40; }
 header h3 { font-size: 14px; line-height: 15px; color:#777; }
 
 header { 
     padding: 0 10px 20px 0; 
     /*border: 1px solid #eee;*/
     clear: both;
+    border-top: 10px solid #f40;
 }
 
 header img {
@@ -338,7 +339,8 @@ header img {
 }
 
 article {
-    padding: 0 0 0 15px;
+    padding: 0 0 10px 15px;
+    margin: 0 0 10px 0;
 }
 
 article h4 {
@@ -350,6 +352,8 @@ article h4 {
 article dl{
     clear: both;
     margin: 0;
+    padding: 0 0 8px 0; 
+    float: left;
 }
 article dt{
     float: left;
@@ -374,16 +378,27 @@ article ul, li {
 }
 
 article dd ul li { color: #000; }
-article dd ul li a { font-weight: normal; display: block; padding: 0 0 8px 0; }
+article dd ul li a { 
+    font-weight: normal; 
+    display: block; 
+    padding: 0 0 8px 0; 
+}
 
 footer {
     margin: 20px 0 0 0; 
     padding: 15px; 
     clear: both;
+    border-top: 1px solid #777;
+    border-bottom: 20px solid #f40;
+    float: left;
+    width: 320px;
 }
 footer a {
+    display: block;
+    float: left;
+    padding: 5px; 
 }
 
 a:visited,
-a { color: #777; }
+a { color: #777; text-decoration: none; }
 a:hover { color: #000; }
