@@ -1,101 +1,80 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <link href='http://fonts.googleapis.com/css?family=Lustria' rel='stylesheet' type='text/css'>
-        <style>
+<!doctype html>
+<!-- Conditional comment for mobile ie7 blogs.msdn.com/b/iemobile/ -->
+<!--[if IEMobile 7 ]>    <html class="no-js iem7" lang="en"> <![endif]-->
+<!--[if (gt IEMobile 7)|!(IEMobile)]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
 
-            dd,
-            dt,
-            p,
-            h4,
-            h3,
-            h2,
-            h1 { font-family: 'Lustria', serif; font-weight: 400; }
+<head>
+  <meta charset="utf-8">
 
-            h1 { font-size: 35px; line-height: 15px; }
-            h2 { font-size: 25px; line-height: 10px; color:#555; }
-            h3 { font-size: 15px; line-height: 10px; color:#777; }
+  <title></title>
+  <meta name="description" content="">
 
-            footer,
-            header { 
-                padding: 0 0 20px 0; 
-                border: 1px solid #eee; 
-                clear: both;
-            }
+  <!-- Mobile viewport optimization h5bp.com/ad -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width">
 
-            header img {
-                float: left;
-                width:100px;
-                padding: 5px;
-                margin: 5px 10px 5px 5px;
-                border: 1px solid #ddd;
-            }
+  <!-- Home screen icon  Mathias Bynens mathiasbynens.be/notes/touch-icons -->
+  <!-- For iPhone 4 with high-resolution Retina display: -->
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/h/apple-touch-icon.png">
+  <!-- For first-generation iPad: -->
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/m/apple-touch-icon.png">
+  <!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
+  <link rel="apple-touch-icon-precomposed" href="img/l/apple-touch-icon-precomposed.png">
+  <!-- For nokia devices: -->
+  <link rel="shortcut icon" href="img/l/apple-touch-icon.png">
 
-            article h4 {
-                font-weight: bold;
-                color: #000;
-                clear: both;
-                padding: 10px 0 0 10px;
-            }
-            article dl{
-                clear: both;
-            }
-            article dt{
-                float: left;
-                clear: left;
-                text-align: right;
-                width: 120px;
-                font-size: 12px;
-            }
-            article dd{
-                float: left;
-                color: #777;
-                margin: 0 0 0 10px;
-                font-size: 12px;
-            }
+  <!-- iOS web app, delete if not needed. https://github.com/h5bp/mobile-boilerplate/issues/94 -->
+  <!-- <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black"> -->
+  <!-- <script>(function(){var a;if(navigator.platform==="iPad"){a=window.orientation!==90||window.orientation===-90?"img/startup-tablet-landscape.png":"img/startup-tablet-portrait.png"}else{a=window.devicePixelRatio===2?"img/startup-retina.png":"img/startup.png"}document.write('<link rel="apple-touch-startup-image" href="'+a+'"/>')})()</script> -->
+  
+  <!-- The script prevents links from opening in mobile safari. https://gist.github.com/1042026 -->
+  <!-- <script>(function(a,b,c){if(c in b&&b[c]){var d,e=a.location,f=/^(a|html)$/i;a.addEventListener("click",function(a){d=a.target;while(!f.test(d.nodeName))d=d.parentNode;"href"in d&&(d.href.indexOf("http")||~d.href.indexOf(e.host))&&(a.preventDefault(),e.href=d.href)},!1)}})(document,window.navigator,"standalone")</script> -->
+  
+  <!-- Mobile IE allows us to activate ClearType technology for smoothing fonts for easy reading -->
+  <meta http-equiv="cleartype" content="on">
 
-            article ul, li {
-                padding: 0;
-                margin: 0;
-                list-style: none;
-            }
+  <!-- more tags for your 'head' to consider h5bp.com/d/head-Tips -->
 
-            footer {
-                margin: 20px 0 0 0; 
-                padding: 20px; 
-                border: 1px solid #eee; 
-                clear: both;
-                background: #eee;
-            }
-            footer a {
-            }
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
 
-            a:visited,
-            a { color: #777; }
-            a:hover { color: #000; }
-        </style>
-    </head>
-    <body>
+  <!-- All JavaScript at the bottom, except for Modernizr which enables HTML5 elements & feature detects -->
+  <script src="js/libs/modernizr-2.0.6.min.js"></script>
+</head>
 
-        <header>
-            <img src="img/icon.png" />
-            <h1>Brian Jolly</h1>
-            <h2>Interactive Developer</h2>
-            <h3>San Francisco Bay Area<h3>
-        </header>
+<body>
 
+  <div id="container">
+    <header>
+        <img src="img/icon.png" />
+        <h1>Brian Jolly</h1>
+        <h2>Interactive Developer</h2>
+        <h3>San Francisco Bay Area<h3>
+    </header>
+
+    <div id="main" role="main">
         <article>
             <h4>Work Experience</h4>
             <dl>
                 <dt>Current</dt>
-                <dd>Interactive Developer at <a href="http://www.creativelift.net">Creative Lift</a></dd>
+                <dd>
+                    <ul>
+                        <li>Interactive Developer</li>
+                        <li><a href="http://www.creativelift.net">Creative Lift</a></li>
+                    </ul>
+                </dd>
 
                 <dt>Past</dt>
                 <dd>
                     <ul>
-                        <li>Interactive Consultant (Sole Proprietorship)</li>
-                        <li>Multimedia Developer at <a href="http://www.weymouthdesign.com">Weymouth Design</a></li>
-                        <li>Multimedia Developer at <a href="http://www.21xdesign.com">21x Design</a></li>
+                        <li>Interactive Consultant</li>
+                        <li><a href="#">(Sole Proprietorship)</a></li>
+                        <li>Multimedia Developer</li>
+                        <li><a href="http://www.weymouthdesign.com">Weymouth Design</a></li>
+                        <li>Multimedia Developer</li>
+                        <li><a href="http://www.21xdesign.com">21x Design</a></li>
                     </ul>
                 </dd>
             </dl>
@@ -137,14 +116,40 @@
                     <a href="http://www.apple.com/macosx/">MacOS</a>
                 </dd>
             </dl>
-        </article>
+            </article>
+    </div>
 
-        <footer>
-            <a href="http://www.linkedin.com/pub/brian-jolly/1/405/522">Linkedin</a>
-            <a href="https://twitter.com/#!/jollier">twitter</a>
-            <a href="https://github.com/brianjolly">github</a>
-        </footer>
 
-        <script src="js/live.js"></script>
-    </body>
+    <footer>
+        <a href="http://www.linkedin.com/pub/brian-jolly/1/405/522">Linkedin</a>
+        <a href="https://twitter.com/#!/jollier">twitter</a>
+        <a href="https://github.com/brianjolly">github</a>
+    </footer>
+  </div> <!--! end of #container -->
+
+
+  <!-- JavaScript at the bottom for fast page loading -->
+
+  <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if necessary -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.1.min.js"><\/script>')</script>
+
+  <!-- scripts concatenated and minified via ant build script-->
+  <script src="js/helper.js"></script>
+  <!-- end scripts-->
+
+  <!-- Debugger - remove for production -->
+  <!-- <script src="https://getfirebug.com/firebug-lite.js"></script> -->
+
+  <!-- Asynchronous Google Analytics snippet. Change UA-XXXXX-X to be your site's ID.
+       mathiasbynens.be/notes/async-analytics-snippet -->
+  <script>
+    var _gaq=[["_setAccount","UA-XXXXX-X"],["_trackPageview"]];
+    (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1;
+    g.src=("https:"==location.protocol?"//ssl":"//www")+".google-analytics.com/ga.js";
+    s.parentNode.insertBefore(g,s)}(document,"script"));
+  </script>
+  <script src="js/live.js"></script>
+
+</body>
 </html>
