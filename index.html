@@ -1,10 +1,78 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link href='http://fonts.googleapis.com/css?family=Lustria' rel='stylesheet' type='text/css'>
         <style>
-            img {
-                width:100px;
+
+            dd,
+            dt,
+            p,
+            h4,
+            h3,
+            h2,
+            h1 { font-family: 'Lustria', serif; font-weight: 400; }
+
+            h1 { font-size: 35px; line-height: 15px; }
+            h2 { font-size: 25px; line-height: 10px; color:#555; }
+            h3 { font-size: 15px; line-height: 10px; color:#777; }
+
+            footer,
+            header { 
+                padding: 0 0 20px 0; 
+                border: 1px solid #eee; 
+                clear: both;
             }
+
+            header img {
+                float: left;
+                width:100px;
+                padding: 5px;
+                margin: 5px 10px 5px 5px;
+                border: 1px solid #ddd;
+            }
+
+            article h4 {
+                font-weight: bold;
+                color: #000;
+                clear: both;
+                padding: 10px 0 0 10px;
+            }
+            article dl{
+                clear: both;
+            }
+            article dt{
+                float: left;
+                clear: left;
+                text-align: right;
+                width: 120px;
+                font-size: 12px;
+            }
+            article dd{
+                float: left;
+                color: #777;
+                margin: 0 0 0 10px;
+                font-size: 12px;
+            }
+
+            article ul, li {
+                padding: 0;
+                margin: 0;
+                list-style: none;
+            }
+
+            footer {
+                margin: 20px 0 0 0; 
+                padding: 20px; 
+                border: 1px solid #eee; 
+                clear: both;
+                background: #eee;
+            }
+            footer a {
+            }
+
+            a:visited,
+            a { color: #777; }
+            a:hover { color: #000; }
         </style>
     </head>
     <body>
@@ -13,22 +81,26 @@
             <img src="img/icon.png" />
             <h1>Brian Jolly</h1>
             <h2>Interactive Developer</h2>
-            <p>San Francisco Bay Area<p>
+            <h3>San Francisco Bay Area<h3>
         </header>
 
         <article>
-            <h3>Work Experience</h3>
+            <h4>Work Experience</h4>
             <dl>
                 <dt>Current</dt>
                 <dd>Interactive Developer at <a href="http://www.creativelift.net">Creative Lift</a></dd>
 
                 <dt>Past</dt>
-                <dd>Interactive Media Consultant (Sole Proprietorship)</dd>
-                <dd>Multimedia Developer at <a href="http://www.weymouthdesign.com">Weymouth Design</a></dd>
-                <dd>Multimedia Developer at <a href="http://www.21xdesign.com">21x Design</a></dd>
+                <dd>
+                    <ul>
+                        <li>Interactive Consultant (Sole Proprietorship)</li>
+                        <li>Multimedia Developer at <a href="http://www.weymouthdesign.com">Weymouth Design</a></li>
+                        <li>Multimedia Developer at <a href="http://www.21xdesign.com">21x Design</a></li>
+                    </ul>
+                </dd>
             </dl>
 
-            <h3>Specialties</h3>
+            <h4>Specialties</h4>
             <dl>
                 <dt>Tools</dt>
                 <dd><a href="http://www.vim.org/">Vim</a>, 
@@ -73,5 +145,6 @@
             <a href="https://github.com/brianjolly">github</a>
         </footer>
 
+        <script src="js/live.js"></script>
     </body>
 </html>
