@@ -38,12 +38,6 @@
                 return '#'+Math.floor(Math.random()*16777215).toString(16);
             }
 
-            function circle(x,y,r) {
-                ctx.beginPath();
-                ctx.arc(x, y, r, 0, Math.PI*2, true);
-                ctx.fill();
-            }
-
             function rect(x,y,w,h) {
                 ctx.beginPath();
                 ctx.rect(x,y,w,h);
@@ -115,7 +109,6 @@
                 ctx.strokeStyle = stroke_color;
                 rect(0,0,WIDTH,HEIGHT);
                 ctx.fillStyle = "purple";
-                //circle(x, y, 10);
                 showFillText();
                 showStrokeText();
             }
